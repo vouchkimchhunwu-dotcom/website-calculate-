@@ -1,0 +1,306 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessory Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <style>
+    .h1{
+      font-family: "Share Tech", sans-serif;
+      text-align: center;
+    }
+     
+    body {
+      margin: 0;
+      font-family:'Times New Roman', Times, serif;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #836a12;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #e5dede; 
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: linear-gradient(to right, #babbb5, #90760e);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+    .price {
+      color: #e91e63;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .card button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #111;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #655a06;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .card:hover{
+      transform: translateY(-10px);
+    }
+    .card {
+     width: px;
+    height: px;
+    padding: 20px;
+    box-shadow: gray 0px 6px 24px 6px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+   .search-box{
+  width:300px;
+  display:flex;
+  align-items:center;
+  border:1px solid #ccc;
+  padding:8px;
+  border-radius:25px;
+}
+.search-box input{
+  border:none;
+  outline:none;
+  width:100%;
+}
+.search-container { display: flex; justify-content: center; padding: 20px; background: #fff; }
+.search-box { width: 300px; display: flex; align-items: center; border: 1px solid #836a12; padding: 8px; border-radius: 25px; }
+.search-box input { border: none; outline: none; width: 100%; padding-left: 10px; }
+  </style>
+</head>
+<body>
+  
+      
+<header>
+    <h1>Bvlgari Shop</h1>
+    <p>Style that completes you ✨</p>
+  </header>  
+  <div class="search-container">
+    <div class="search-box">
+    <input type="text" id="searchInput" onkeyup="searchJewelry()" placeholder="Search jewelry (Ring, Necklace...)...">
+  </div>
+</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>  
+  <section class="hero">
+    <h1>Beautiful Accessories</h1>
+    <p>Necklaces, Rings, Bracelets & More</p>
+  </section> 
+  
+
+  <section class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+  
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/9a/f6/0f/9af60fa890b6a2fe877faea092946340.jpg" alt="Earrings" />
+    <h3>Earrings</h3>
+    <p class="price">$800</p>
+    <button>Add to Cart</button>
+  </div>  
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/d1/06/29/d10629202f99667c4df7a71dfe5abd5a.jpg" alt="Earrings" />
+    <h3>Earrings</h3>
+    <p class="price">$800</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/03/5d/88/035d889c509e3e79856055fbc4c1edaa.jpg" alt="Earrings" />
+    <h3>Earrings</h3>
+    <p class="price">$800</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/28/35/45/2835452545fbe27dffb6a7dc7dbbec7f.jpg" alt="Earrings" />
+    <h3>Earrings</h3>
+    <p class="price">$800</p>
+    <button>Add to Cart</button>
+  </div>
+
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/71/5a/35/715a3526840b70033794826ac32ac858.jpg" alt="Necklace" />
+    <h3> Necklace</h3>
+    <p class="price">$1500</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/76/51/d1/7651d1e55e298d2ae65942ff0d01ea02.jpg" alt="Necklace" />
+    <h3> Necklace</h3>
+    <p class="price">$1500</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/ae/3f/2f/ae3f2f4f1120dea46c3e68bd9b1b67fd.jpg" alt="Necklace" />
+    <h3> Necklace</h3>
+    <p class="price">$1500</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/61/30/05/6130057d72106f15610a01e37cd80dbb.jpg" alt="Necklace" />
+    <h3> Necklace</h3>
+    <p class="price">$1500</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/26/d8/23/26d8234e8c31f7855e73e4a4b8913443.jpg" alt="Ring" />
+    <h3> Ring</h3>
+    <p class="price">$1000</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/97/6c/a0/976ca0a3a6dbd610d899c219b83b8364.jpg" alt="Ring" />
+    <h3> Ring</h3>
+    <p class="price">$1000</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/1a/63/ac/1a63aca3b1107cc32d2aaa283b1e3901.jpg" alt="Ring" />
+    <h3> Ring</h3>
+    <p class="price">$1000</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/e7/be/6d/e7be6dc7a5239ee5fb51eac6238fafda.jpg" alt="Ring" />
+    <h3> Ring</h3>
+    <p class="price">$1000</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/b7/49/bf/b749bf911ecb83e0f1243d43056c696b.jpg" alt="Bracelet" />
+    <h3>Bracelet</h3>
+    <p class="price">$1200</p>
+    <button>Add to Cart</button> 
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/dc/0c/b3/dc0cb3833cd96b9a242467ae2fe22501.jpg" alt="Bracelet" />
+    <h3>Bracelet</h3>
+    <p class="price">$1200</p>
+    <button>Add to Cart</button> 
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/60/19/20/6019208e91da14b5a19ef74a85f4ae67.jpg" alt="Bracelet" />
+    <h3>Bracelet</h3>
+    <p class="price">$1200</p>
+    <button>Add to Cart</button> 
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/84/37/62/843762440bfe4e7a26a0dead76bcda36.jpg" alt="Bracelet" />
+    <h3>Bracelet</h3>
+    <p class="price">$1200</p>
+    <button>Add to Cart</button> 
+  </div>
+
+
+  <div class="h1">
+    
+    <h1>Be You</h1>
+    <h1>Be confident</h1>
+    <h1>Be Confident with Bvlgari </h1>
+  </div>
+
+  <div class="image">
+    <img src="https://i.pinimg.com/474x/10/12/e2/1012e2ad587e6b53ae829b6ceb5979b2.jpg" alt="image" width="300px" >
+    <img src="https://i.pinimg.com/1200x/4b/90/a3/4b90a3479b85ea03771cdc25f8c45b11.jpg" alt="image" width="500px">
+  </div>
+
+</div>
+
+  </section>  
+  <section class="container" id="about">
+    
+    <h2>About Us</h2>
+    <p>
+      We sell trendy and affordable accessories that match every style. Our mission is to help you feel confident and stylish every day.
+    </p>
+  </section> 
+   <section class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: Bvlgarishop@email.com</p>
+    <p>Phone: +855 12 345 678</p>
+  </section> 
+   <footer>
+    <p>&copy; 2026 Accessory Shop. All rights reserved.</p>
+  </footer>
+
+
+  
+</body>
+</html>
